@@ -1,0 +1,33 @@
+.partners-list {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+  .partner {
+    margin-right: 30px;
+    transition: $transition;
+    :last-child {margin-right: 0px;}
+  }
+  .partner-svg {
+    fill: #afb1b8;
+    transition: $transition;
+  }
+  .partner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: $transition;
+  }  
+  .partner:hover .partner-svg,
+.partner:focus .partner-svg {
+  fill: $accent-color;
+}
+.partner:hover .partner-link,
+.partner:focus .partner-link {
+  border: 1px solid $accent-color;
+}

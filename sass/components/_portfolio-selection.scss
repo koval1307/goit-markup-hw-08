@@ -1,0 +1,50 @@
+.selection {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+  .selection__button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    transition: $transition;
+  }
+  .selection__button:hover,
+  .selection__button:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+  .selection__item {
+    margin-right: 10px;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  .selection__button:hover,
+  .selection__button:focus {
+    color: #ffffff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  .selection__item:last-child {
+    margin-right: 0px;
+  }
