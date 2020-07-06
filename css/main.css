@@ -900,7 +900,7 @@ h6 {
 
 @media screen and (min-width: 480px) {
   .partner {
-    margin-right: 15px;
+    margin-right: 30px;
     margin-bottom: 15px;
   }
   .partner:nth-child(2n) {
