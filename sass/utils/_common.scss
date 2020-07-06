@@ -2,6 +2,11 @@
   .section {
     padding-bottom: 94px;
     padding-top: 94px;
+
+    @media screen and (min-width: 480px) {
+      padding-bottom:60px;
+    padding-top: 60px;
+  width: 480px;}
   }
 h2,
 h3,
@@ -35,6 +40,8 @@ h6 {
     line-height: 1.87;
     letter-spacing: 0.06em;
     font-weight: 700;
+
+    
   }
   .section-title {
     margin-top: 0px;

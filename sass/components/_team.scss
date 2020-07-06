@@ -6,6 +6,8 @@
     list-style: none;
     padding-left: 0px;
     margin: 0px;
+    @media screen and (min-width: 480px) {
+      display: block;}
      }
      .member__title {
       margin-bottom: 10px;
@@ -15,8 +17,11 @@
       color: #212121;
     }
     .member {
-      width: calc((100% - 90px) / 4);
+      width: calc((100% - 30px) / 4);
       margin-right: 30px;
+
+      @media screen and (min-width: 480px) {
+        width: 450px;}
     }
     
     .member-details {
@@ -34,3 +39,7 @@
       line-height: 1.2;
       color: #757575;
     }
+     .member__img {
+      @media screen and (min-width: 480px) {
+        width: 450px;}
+     }

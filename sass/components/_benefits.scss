@@ -6,10 +6,20 @@
     list-style: none;
     padding-left: 0px;
     margin: 0px;
+
+    @media screen and (min-width: 480px) {
+      display: inline-block;
+      width: 100%;
+    }
   }
   .benefits-list .benefits-list__item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+
+    @media screen and (min-width: 480px) {
+      width:100%;
+      margin-right: 0px;
+    }
   }
   .benefits-list :last-child {
     margin-right: 0px;
@@ -37,6 +47,10 @@
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
   }
   .benefits__text {
     margin: 0px;
