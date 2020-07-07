@@ -1,12 +1,12 @@
 
   .section {
+    @media screen and (min-width:1200px){
+      
     padding-bottom: 94px;
-    padding-top: 94px;
+    padding-top: 94px;}
 
-    @media screen and (min-width: 480px) {
-      padding-bottom:60px;
-    padding-top: 60px;
-  width: 480px;}
+    @media screen and (max-width: 1199px){
+  width:100%;}
   }
 h2,
 h3,
@@ -44,11 +44,22 @@ h6 {
     
   }
   .section-title {
+   
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     color: #212121;
-  }
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      
+font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;}
+    }
+
+
+  

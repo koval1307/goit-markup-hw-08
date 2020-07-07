@@ -13,18 +13,23 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       display: none;}
   }
-  .none { @media screen and (min-width: 480px) {
-    display: none;}}
+  .none { 
+    @media screen and (max-width: 1199px){
+      display: none;
+    }
+    
+  }
+    
   .works-list {
     display: flex;
     list-style: none;
     padding-left: 0px;
     margin: 0px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 1199px) {
       display: none;}
   }
   
