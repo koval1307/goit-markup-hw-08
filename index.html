@@ -438,8 +438,9 @@
     <!--Футер-->
     <footer class="footer">
       <div class="footer-flex container">
+        <div class="footer-wrapper">
         <div class="footer-flex-adress">
-          <a class="footer-webstudio" href="./index.html">
+          <a class="footer-logo" href="./index.html">
             <span class="web"> Web </span>
             <span class="studio">Studio</span>
           </a>
@@ -491,19 +492,20 @@
             </li>
           </ul>
         </div>
+      </div>
         <div class="subscribe-footer">
           <b class="subscribe-title"> Подпишитесь на рассылку </b>
-          <form class="subscribe-footer__form">
-            <div class="footer-form-field">
+          <form class="subscribe-footer-form">
+
               <label for="mail"></label>
-              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+              <input type="email" name="mail" id="mail" placeholder="E-mail" class="subscribe-footer-form__input" />
               <button class="subscribe-button">
                 <span class="subscribe__text">Подписаться</span>
                 <svg class="subscribe__svg" width="25" height="25">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+           
           </form>
         </div>
       </div>
