@@ -1,14 +1,93 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
+  
 }
 .container-site-nav {
     display: flex;
     align-items: center;
+    padding-top: 0px;
+  padding-bottom: 0px;
+    
+  }
+  .logo {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen  and (min-width:768px){
+      font-size: 24px;
+      white-space: nowrap;
+    }
+  }
+  .nav-btn {
+    @media screen and (max-width:767px
+    ){
+    
+    border: none;
+    background-color: transparent;
+    display: inline-flex;
+    margin-left: auto;
+
+  }
+  @media screen and (min-width:768px)  {
+    display: none;
+  }
+}
+  .nav-btn .menu-icon-close {
+		display: none;
+  }
+  .nav-btn.is-open .menu-icon-close {
+		display: block;
+  }
+  .nav-btn.is-open .menu-icon-open {
+		display: none;
+	}
+  .menu { 
+    @media (max-width: 767px) {
+    display: none;
+		position: absolute;
+		z-index: 999;
+		top: 100%;
+		left: 0;
+		width: 100%;
+
+		background-color: #ffffff;
+
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-left: 50px;
+		padding-right: 50px;
+
+		text-align: center;
+		font-size: 20px;
+		border-top: 1px solid #ececec;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+  @media screen and (min-width:767px) {
+    display: flex;
+    align-items: center;
+    
+  }
+  @media screen  and (min-width:1200px){
+    width: 100%;
+    margin-left: 85px;
+    align-items: center;
+  }
+}
+  .menu.is-open {
+    @media screen  and (max-width:767px) {
+      display: block;
+    }
+    
   }
   .site-nav {
     color: var(--title-text-color);
     display: flex;
     align-items: center;
+    @media screen and (max-width:767px) {
+      margin-bottom: 60px;
+      
+    }
   }
   .studio {
     font-family: Raleway, sans-serif;
@@ -38,13 +117,30 @@
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.02em;
+
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
   }
   .nav-list__item {
+    position: relative;
     padding-top: 25px;
     padding-bottom: 25px;
-    position: relative;
+   
     margin-right: 50px;
     color: #212121;
+    @media screen and (max-width:767px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 40px;
+      &:last-child {padding-bottom: 0px;
+      margin-right: auto;}
+    padding-top: 0px;
+    }
   }
   .nav-list__item:last-child {
     margin-right: 0px;
@@ -74,15 +170,30 @@
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
+    &:last-child {margin-right: 0px;}
+
+    @media screen and (max-width:767px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    @media screen  and (min-width:768px){
+     
+      margin-left: 81px;
+      
+    }
+    @media screen and (min-width:1200px){
+     margin-left: auto;
+    }
   }
   .contacts-list__svg {
     fill: $primary-text-color;
     margin-right: 10px;
   }
   
-  .contacts-list:last-child {
-    margin-right: 0px;
-  }
+
   
   .contacts-list__item {
     display: inline-flex;
@@ -91,10 +202,34 @@
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
+    @media screen and (max-width:767px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+      &:last-child {margin-bottom: 0px;}
+      
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    @media screen and (min-width:1200px) {
+      margin-bottom: 0px;
+    }
   }
   .contacts-list__link {
     color: $primary-text-color;
     transition: $transition;
+
+    @media screen  and (min-width:768px) {
+      display: inline-flex;
+    }
+    @media screen and (min-width:1200px) {
+      align-items: center;
+    }
   }
   .contacts-list__svg {
     vertical-align: middle;

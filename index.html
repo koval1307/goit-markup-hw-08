@@ -22,13 +22,24 @@
     <!--Шапка сайта-->
     <header class="page-header">
       <div class="container container-site-nav">
-        <nav class="site-nav">
-          <!-- Logo -->
-          <a href="./index.html" class="logo">
-            <span class="web"> Web </span>
-            <span class="studio">Studio</span>
-          </a>
+        <a href="./index.html" class="logo">
+
+          <span class="web"> Web </span>
+          <span class="studio">Studio</span>
+        </a>
+
+        <button type="button" class="nav-btn is-open" data-menu-button>
+          <svg class="menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
+            <use class="menu-icon-open" href="./images/sprite.svg#icon-menu"></use>
+            <use class="menu-icon-close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button> 
+       
+        
+         
           <!-- Навигационное меню -->
+          <div class="menu .is-open" data-menu >
+            <nav class="site-nav">
           <ul class="nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="site-nav__link current active"
@@ -53,7 +64,6 @@
               info@devstudio.com</a
             >
           </li>
-
           <li class="contacts-list__item">
             <a href="tel:+380961111111" class="contacts-list__link">
               <svg class="contacts-list__svg" width="15" height="15">
@@ -62,6 +72,7 @@
             >
           </li>
         </ul>
+      </div>
       </div>
     </header>
     <!--Main-->
@@ -585,5 +596,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
