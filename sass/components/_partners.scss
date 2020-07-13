@@ -71,7 +71,10 @@ margin-right: 0px;
      
 
     //  }
-    
+    @media screen and {
+      width: 100%;
+      
+    }
   }  
   .partner:hover .partner-svg,
 .partner:focus .partner-svg {
