@@ -70,7 +70,7 @@
   }
   @media screen  and (min-width:1200px){
     width: 100%;
-    margin-left: 85px;
+    margin-left: 68px;
     align-items: center;
   }
 }
@@ -234,6 +234,10 @@
   .contacts-list__svg {
     vertical-align: middle;
     transition: $transition;
+    @media screen  and (min-width:768px){
+      width: 14px;
+      
+    }
   }
   .contacts-list__link:hover .contacts-list__svg,
   .contacts-list__link:focus .contacts-list__svg {

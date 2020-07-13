@@ -4,13 +4,14 @@
     margin: 0px;
     padding: 0px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     @media screen and (min-width: 480px) {
       } 
   }
   .partner {
-    width: 100%;
+    width: calc(100% / 2);
     flex-wrap: wrap;
+    padding-right: 15px;
     transition: $transition;
   
       @media screen and (max-width: 767px) {
@@ -61,7 +62,7 @@ margin-right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 100%;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -71,10 +72,9 @@ margin-right: 0px;
      
 
     //  }
-    @media screen and {
-      width: 100%;
+   
       
-    }
+    
   }  
   .partner:hover .partner-svg,
 .partner:focus .partner-svg {
