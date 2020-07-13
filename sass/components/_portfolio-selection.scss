@@ -1,10 +1,17 @@
 .selection {
     list-style: none;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
+    @media screen {
+      @media screen and (min-width:1200px) {
+        justify-content: center;
+      }
+      
+    }
   }
   .selection__button {
     padding: 6px 22px;
@@ -26,7 +33,13 @@
     color: #ffffff;
   }
   .selection__item {
-    margin-right: 10px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-right: 0px;
+  
+    }
+
   }
   .portfolio {
     display: flex;
@@ -47,4 +60,5 @@
   }
   .selection__item:last-child {
     margin-right: 0px;
+
   }
