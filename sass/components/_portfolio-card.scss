@@ -78,6 +78,7 @@
   .card-content__img {
     position: relative;
     overflow: hidden;
+    width: 100%;
   }
   .card:hover .card-content__text {
     transform: translateY(-100%);
